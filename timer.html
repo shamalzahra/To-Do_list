@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body >
+    <div class="todocode">
+        <div class="header" style="padding-top: 0px;">
+            <h1 id="taskHeading">Add Your Timers</h1>
+        </div>
+        <div id="dateTimeWrapper" style="margin-bottom:7px;">
+            <input type="date" class="dateInput"></input>
+        </div>
+        <div class="inputWrapper">
+            <input id="taskInput" type="text" placeholder="Enter Task here">
+            <button onclick="addItem()">Add</button>
+        </div>
+        <div class="taskList">
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+         <script >
+function addItem() {
+    const inputText = document.getElementById("taskInput").value; // Updated ID
+    if (inputText === "") {
+        alert("List is empty");
+        return; // Prevent adding empty items
+    }
+
+    const li = document.createElement("li");
+    li.textContent = inputText;
+    li.classList.add("litodo");
+
+    document.getElementById("taskList").appendChild(li); // Updated ID
+    let chc=document.createElement("input");
+    chc.type="time";
+    chc.classList.add("daterem");
+    li.appendChild(chc);
+    let currenttime = new Date().toTimeString().substring(0, 5); 
+
+    // Use onchange event to check the selected date
+    chc.onchange = function () {
+        if (chc.value === currenttime) {
+            alert("Your Task Calling You!");
+        }
+    };
+    
+
+
+    
+    // Clear the input field after adding the item
+    document.getElementById("taskInput").value = ""; // Updated ID
+
+    // Create and append a remove button
+    const btn = document.createElement("button");
+    btn.classList.add("btnrem");
+    btn.textContent = "Remove";
+    btn.onclick = function () {
+        li.remove();
+    };
+    li.appendChild(btn);
+}
+
+
+         </script>
+</body>
+</html>

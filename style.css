@@ -1,0 +1,279 @@
+.hifi{
+    background-color: gray;
+}
+body{
+    overflow-x: hidden;
+    background-image: url("/body\ pic.jpg");
+    background-size: cover;
+    height: 100vh;
+    
+}
+.box1{
+    display:flex;
+    align-items: center;
+    margin-top: 5px;
+    color: black;
+}
+.pop{
+    width: 50px;
+    display: flex;
+    align-content: end;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.box1 .ico1{
+    margin-right: 94%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.ico2{
+    margin:5px 20px 5px 5px;
+}
+.ico3{
+    margin-right: 10px;
+}
+/*sidebar*/
+.sidebar{
+    height: 100vh;
+    width: 15%;
+    background-color:#D4A4BC;
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    left:-300px;
+    transition: left 0.5s ease-in-out;
+    position: fixed;
+    z-index: 1000;
+    padding-left: 5px;
+    margin-top: 2px;
+}
+.sidebar.active{
+    left:0;
+    height: 100vh;
+}
+.sidebar div{
+    height: 40px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    
+}
+/*sidebar2*/
+.slidebar2{
+    height: 100vh;
+    width: 15%;
+    background-color: #D4A4BC;
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    right:-300px;
+    transition: right 0.5s ease-in-out;
+    position: fixed;
+    z-index: 1000;
+    padding-left: 5px;
+}
+.slidebar2.active2{
+    right:0;
+}
+.slidebar2 div{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.slidebar2 .text8{
+    margin-top: 140%;
+}
+/*sidebar3*/
+.slidebar3{
+    height: 100vh;
+    width: 15%;
+    background-color: #D4A4BC;
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    right:-300px;
+    transition: right 0.5s ease-in-out;
+    position: fixed;
+    z-index: 1000;
+    padding-left: 5px;
+}
+.slidebar3.active3{
+    right:0;
+}
+.slidebar3 div{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+/*todopage*/
+
+.todocode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+}
+.todocode #pol{
+    height: 50px;
+    width: 400px;
+    background-color: #F7C5BA;
+    border-color: none;
+    border: 0;
+    
+}
+.todocode button{
+    margin-left: 3px;
+    height:45px;
+    width: 90px;
+    
+}
+.litodo{
+    
+    height: 50px;
+     width: 400px;
+      background-color:#F7C5BA;
+      margin-top: 10px; /* Space between list items */ 
+      display: flex; align-items: center;
+       justify-content: space-between;
+        padding: 0 10px; 
+        border-radius: 5px;
+        text-transform: capitalize;
+}
+.todobtn{
+    align-items: center;
+     margin-left: 10px; /* Adjust margin */ 
+     height: 30px; /* Adjust height */
+      width: 60px; /* Adjust width */
+
+        border: 1px solid grey;
+       border-radius: 5px; 
+       cursor: pointer;
+}
+/*text now*/
+.uff{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textnow {
+    
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center;    /* Vertical alignment */
+
+}
+.textbtn{
+    height: 45px;
+    width: 300px;
+    background-color: #F7C5BA;
+    border-color: none;
+    border: 0;
+}
+.text3{
+    height: 48px;
+    width: 55px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+.text1 input{
+    height: 50px;
+    width: 400px;
+}
+.noo {
+    
+    width: 100%; /* Full width of the container */
+}
+
+#container {
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: flex-start;
+    gap: 10px; /* Space between items */
+    
+}
+
+.newdivclass {
+    overflow-wrap: break-word;
+    width: 200px;
+    height: 300px;
+    border: 1px solid gray;
+    background-color:#F7C5BA;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right:5px ;
+    display: flex;
+    flex-direction: column;
+}
+.newdivclass:hover{
+width: 230px;
+    height: 320px;
+ box-shadow: 10px 10px 5px 0px gray}
+
+/*button of text remove*/
+.btntextremove{
+    height:30px ;
+    width: 60px;
+    margin-top: auto;
+    margin-left: 70px;
+    margin-bottom: 2px;
+
+}
+.checkl{
+    margin-left: 250px;
+    background-color: #F7C5BA;
+    }
+    .daterem{
+        margin-left: 250px;
+    }
+    #taskInput{
+        height: 50px;
+    width: 400px;
+    background-color: #F7C5BA;
+    border-color: none;
+    border: 0;
+    }
+    .btnrem{
+        height:30px ;
+    width: 60px;
+    margin-top: auto;
+    margin-left: 70px;
+    margin-bottom: 2px;
+
+    
+}
+.modechanger{
+    background-color: aquamarine;
+    color: white;
+}
+.text09{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0px;
+}
+.text09 button{
+    height: 40px;
+    width:90px;
+    padding-left: 0px;
+    margin-left: 0px;
+    background-color: #F7C5BA;
+    border: 1px solid grey;
+
+}
